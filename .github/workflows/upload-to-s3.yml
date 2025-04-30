@@ -20,6 +20,12 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1  # or your region
 
+      - name: Create folder and file
+        run: |
+          mkdir -p my-folder
+          echo "Hello World" > my-folder/hello.txt
+
+
       - name: Upload files to S3
         run: |
           aws s3 cp ./my-folder s3://your-s3-bucket-name/ --recursive

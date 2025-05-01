@@ -23,7 +23,7 @@ jobs:
       - name: Create folder and file
         run: |
           mkdir -p my-folder
-          echo "Hello World" > my-folder/hello.txt
+          echo "Hello kalyug" > my-folder/hello.txt
 
 
       - name: Upload files to S3

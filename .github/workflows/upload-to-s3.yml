@@ -28,5 +28,5 @@ jobs:
 
       - name: Upload files to S3
         run: |
-          aws s3 cp ./my-folder s3://your-s3-bucket-name/ --recursive
+          aws s3 cp ./my-folder s3://amitgithubdemo/ --recursive
 
